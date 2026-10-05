@@ -72,7 +72,7 @@
                     </Border>
                 </Border>
                 <!-- 主入口按钮 -->
-                <Border Grid.Row="1"
+                <Border Grid.Row="3"
                         x:Name="SectionA"
                         Padding="10"
                         Background="{DynamicResource Sem.Color.SurfaceContainerLow}"
@@ -225,7 +225,8 @@
                 <!-- 页脚品牌 -->
                 <StackPanel x:Name="FooterBrand"
                             Orientation="Vertical"
-                            Grid.Row="3"
+                            Grid.Row="1"
+
                             Margin="16,24"
                             HorizontalAlignment="Center">
                     <Svg Path="avares://OpenUtauMobile/Assets/logotype.svg"
