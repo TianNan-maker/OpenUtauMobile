@@ -149,9 +149,9 @@ jobs:
             -p:AndroidPackageFormat=apk \
             -p:AndroidKeyStore=true \
             -p:AndroidSigningKeyStore="${{ github.workspace }}/signing.keystore"
-            -p:AndroidSigningStorePass="$KEYSTORE_PASSWORD"
-            -p:AndroidSigningKeyAlias="$KEY_ALIAS"
-            -p:AndroidSigningKeyPass="$KEY_PASSWORD"
+            -p:AndroidSigningStorePass="${{ secrets.ANDROID_KEYSTORE_PASSWORD }}"
+            -p:AndroidSigningKeyAlias="${{ secrets.ANDROID_KEY_ALIAS }}"
+            -p:AndroidSigningKeyPass="${{ secrets.ANDROID_KEY_PASSWORD }}"
       - name: Setup APK verification interpreter
         uses: actions/setup-python@v7
         with:
