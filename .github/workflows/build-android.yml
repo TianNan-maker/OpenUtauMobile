@@ -148,9 +148,9 @@ jobs:
             -p:AndroidNdkDirectory="$GAME_ANDROID_NDK" \
             -p:AndroidPackageFormat=apk \
             -p:AndroidKeyStore=true \
-            -p:AndroidSigningKeyStore="${{ github.workspace }}/signing.keystore" \
-            -p:AndroidSigningStorePass="$KEYSTORE_PASSWORD" \
-            -p:AndroidSigningKeyAlias="$KEY_ALIAS" \
+            -p:AndroidSigningKeyStore="dummy" \
+            -p:AndroidSigningStorePass="dummy" \
+            -p:AndroidSigningKeyAlias="dummy" \
             -p:AndroidSigningKeyPass="dummy"
 
       - name: Setup APK verification interpreter
